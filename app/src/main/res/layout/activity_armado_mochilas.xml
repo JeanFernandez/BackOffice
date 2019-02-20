@@ -158,7 +158,7 @@
         android:layout_marginLeft="170dp"
         android:layout_marginStart="170dp"
         android:layout_marginTop="444dp"
-        android:background="#ED7D87"
+        android:background="@drawable/fondo"
         android:onClick="enviarABD"
         android:text="@string/btnListoPopUp"
         android:textColor="#FFF"
