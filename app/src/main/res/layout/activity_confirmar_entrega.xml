@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".confirmarEntrega">
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFuncionario" />
+
+    <TextView
+        android:id="@+id/txtConfEntregaFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregatxtFecha"
+        app:layout_constraintStart_toEndOf="@+id/lblFecha"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/lblBP"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblBP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHora" />
+
+    <TextView
+        android:id="@+id/txtConfEntregaBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregatxtBP"
+        app:layout_constraintStart_toEndOf="@+id/lblBP"
+        app:layout_constraintTop_toBottomOf="@+id/txtHora" />
+
+    <TextView
+        android:id="@+id/lblMochila"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblMochila"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBP" />
+
+    <TextView
+        android:id="@+id/txtConfEntregaMochila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/menuEntregatxtMochila"
+        app:layout_constraintStart_toEndOf="@+id/lblMochila"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfEntregaBP" />
+
+    <TextView
+        android:id="@+id/lblInterfonia"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblInterfonia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMochila" />
+
+    <TextView
+        android:id="@+id/txtConfEntregaInterfonia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregatxtInterfonia"
+        app:layout_constraintStart_toEndOf="@+id/lblInterfonia"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfEntregaMochila" />
+
+    <TextView
+        android:id="@+id/lblTablet"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblTablet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblInterfonia" />
+
+    <TextView
+        android:id="@+id/txtConfEntregaTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregatxtTablet"
+        app:layout_constraintStart_toEndOf="@+id/lblTablet"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfEntregaInterfonia" />
+
+    <Button
+        android:id="@+id/btniraMenuPrincipal"
+        android:layout_width="235dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="404dp"
+        android:background="#29235c"
+        android:onClick="btnMenuPrincipal"
+        android:text="@string/confirmaEntregabtniraMenuPpal"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="224dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/lblHora"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFecha" />
+
+    <TextView
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregatxtHora"
+        app:layout_constraintStart_toEndOf="@+id/lblHora"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfEntregaFecha" />
+
+    <TextView
+        android:id="@+id/txtFuncionario"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/menuEntregatxtBO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/menuEntregatxtBONombre"
+        app:layout_constraintStart_toEndOf="@+id/txtFuncionario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTablet" />
+
+    <TextView
+        android:id="@+id/txtConfEntregasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraA"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfEntregaTablet" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/txtConfEntregasenb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraB"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfEntregasena" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/txtCableConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cable"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfEntregasenb" />
+</android.support.constraint.ConstraintLayout>

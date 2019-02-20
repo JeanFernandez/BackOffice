@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuEntrega">
+
+
+    <Button
+        android:id="@+id/btnMenuReciboScannerMochila"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="155dp"
+        android:background="#ffc300"
+        android:onClick="scannerMochila"
+        android:text="@string/menuEntregabtnScaner"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtMenuEntregaMochila"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMenuEntregaCofirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="428dp"
+        android:background="@drawable/fondo"
+        android:text="@string/menuEntregabtnConfirmar"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMenuEntregaMochila"
+        android:layout_width="155dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="@string/menuEntregatxtMochila"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/logindescLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/txtMenuEntregaBO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/menuEntregatxtBO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMenuEntregaUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/menuEntregatxtBONombre"
+        app:layout_constraintStart_toEndOf="@+id/txtMenuEntregaBO"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="428dp"
+        android:background="#29235c"
+        android:onClick="volverMPEntrega"
+        android:text="@string/btnVolverPopUp"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/interfoniaPopUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblTablet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/txtEntregaInter"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/interfoniaPopUp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEntregaTablet"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirmaEntregalblTablet"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntregaInter" />
+
+    <TextView
+        android:id="@+id/txtEntregaSenA"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraA"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntregaTablet" />
+
+    <TextView
+        android:id="@+id/txtEntregaSenB"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/senaleraB"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntregaSenA" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/txtEntregaCable"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cable"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntregaSenB" />
+
+    <Button
+        android:id="@+id/btnScannerNuevaInter"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="240dp"
+        android:background="#ff5733"
+        android:onClick="scannerInterfonia"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txtEntregaInter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnScannerNuevaTablet"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff5733"
+        android:onClick="scannerTablet"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txtEntregaTablet"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerNuevaInter" />
+
+    <Button
+        android:id="@+id/btnScannerNuevaSenaA"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff5733"
+        android:onClick="scannerSenaleraA"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txtEntregaSenA"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerNuevaTablet" />
+
+    <Button
+        android:id="@+id/btnScannerNuevaSenaB"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff5733"
+        android:onClick="scannerSenaleraB"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txtEntregaSenB"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerNuevaSenaA" />
+
+    <Button
+        android:id="@+id/btnScannerNuevaCable"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff5733"
+        android:onClick="scannerCable"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txtEntregaCable"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerNuevaSenaB" />
+
+    <ProgressBar
+        android:id="@+id/progressBarEntrega"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="288dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntregaCable" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actv"
+        android:layout_width="170dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:completionHint="INGRESE BP"
+        android:completionThreshold="1"
+        android:hint="INGRESE BP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+</android.support.constraint.ConstraintLayout>

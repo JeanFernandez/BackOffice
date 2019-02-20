@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuRecibo">
+
+    <Button
+        android:id="@+id/btnMenuReciboCofirmar"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="432dp"
+        android:background="#29235c"
+        android:onClick="irAconfirmarRecibo"
+        android:text="@string/menuEntregabtnConfirmar"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRecibirBP"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="#ED7D87"
+        android:onClick="verificarElementos"
+        android:text="@string/menuRecibirbtnBP"
+        android:textColor="#fff"
+        app:layout_constraintStart_toEndOf="@+id/actvR"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/menuRecibirlblMochila"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/menuRecibirlblInterfonia"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/menuRecibirlblTablet"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtConfEntregaFecha"
+        android:layout_width="281dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirlblFechayHora"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMochila"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtInterfonia"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirtxtInterfonia"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMochila" />
+
+    <EditText
+        android:id="@+id/txtTablet"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirtxtTablet"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInterfonia" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="432dp"
+        android:background="#29235c"
+        android:onClick="volverMP"
+        android:text="@string/btnVolverPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/senaleraA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/senaleraB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/txtSenaleraA"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTablet" />
+
+    <EditText
+        android:id="@+id/txtSenaleraB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirtxtTablet"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSenaleraA" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/cable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/txtCableRecibo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirtxtTablet"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSenaleraB" />
+
+    <TextView
+        android:id="@+id/txtBORecibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/menuEntregatxtBO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mochilaScanner"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/interfoniaScanner"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mochilaScanner" />
+
+    <EditText
+        android:id="@+id/tabletScanner"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interfoniaScanner" />
+
+    <EditText
+        android:id="@+id/senaleraAScanner"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabletScanner" />
+
+    <EditText
+        android:id="@+id/senaleraBScanner"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senaleraAScanner" />
+
+    <EditText
+        android:id="@+id/cableScanner"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/menuRecibirtxtMochila"
+        android:inputType="textPersonName"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senaleraBScanner" />
+
+    <Button
+        android:id="@+id/btnScannerMochila"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="152dp"
+        android:background="#ED7D87"
+        android:onClick="scannerMochilaRec"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnScannerInter"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="6dp"
+        android:background="#ED7D87"
+        android:onClick="scannerInterRec"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerMochila" />
+
+    <Button
+        android:id="@+id/btnScannerTablet"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="4dp"
+        android:background="#ED7D87"
+        android:onClick="scanner1TabletRec"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerInter" />
+
+    <Button
+        android:id="@+id/btnScannerSenA"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="6dp"
+        android:background="#ED7D87"
+        android:onClick="scannerSenaARec"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerTablet" />
+
+    <Button
+        android:id="@+id/btnScannerSenB"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="10dp"
+        android:background="#ED7D87"
+        android:onClick="scannerSenaBRec"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerSenA" />
+
+    <Button
+        android:id="@+id/btnScannerCable"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="12dp"
+        android:background="#ED7D87"
+        android:onClick="scannerCableRec"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerSenB" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actvR"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:completionHint="INGRESE BP"
+        android:completionThreshold="1"
+        android:hint="INGRESE BP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

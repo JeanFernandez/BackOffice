@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".armadoMochilas">
+
+    <EditText
+        android:id="@+id/txtMochilaCreacion"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirlblMochila"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtInterCreacion"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirlblInterfonia"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMochilaCreacion" />
+
+    <EditText
+        android:id="@+id/txtCableCreacion"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/cable"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInterCreacion" />
+
+    <EditText
+        android:id="@+id/txtTabletCreacion"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/menuRecibirlblTablet"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCableCreacion" />
+
+    <EditText
+        android:id="@+id/txtSenaleraACreacion"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/senaleraA"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTabletCreacion" />
+
+    <Button
+        android:id="@+id/btnMochilaCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:background="#29235c"
+        android:onClick="scannerMochilaCreacion"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/txtMochilaCreacion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInterCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="#29235c"
+        android:onClick="scannerInterfonia"
+        android:text="@string/scanner"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/txtInterCreacion"
+        app:layout_constraintTop_toBottomOf="@+id/btnMochilaCreacion" />
+
+    <Button
+        android:id="@+id/btnCableCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#29235c"
+        android:onClick="scannerCable"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/txtCableCreacion"
+        app:layout_constraintTop_toBottomOf="@+id/btnInterCreacion" />
+
+    <Button
+        android:id="@+id/btnTabletCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#29235c"
+        android:onClick="scannerTablet"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTabletCreacion"
+        app:layout_constraintTop_toBottomOf="@+id/btnCableCreacion" />
+
+    <Button
+        android:id="@+id/btnSenaleraACreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="#29235c"
+        android:onClick="scannerSenaleticaA"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/txtSenaleraACreacion"
+        app:layout_constraintTop_toBottomOf="@+id/btnTabletCreacion" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="444dp"
+        android:background="#ED7D87"
+        android:onClick="enviarABD"
+        android:text="@string/btnListoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSenaleraBCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="#29235c"
+        android:onClick="scannerSenaleticaB"
+        android:text="@string/scanner"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/txtSenaleraBCreacion"
+        app:layout_constraintTop_toBottomOf="@+id/btnSenaleraACreacion" />
+
+    <EditText
+        android:id="@+id/txtSenaleraBCreacion"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/senaleraB"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSenaleraACreacion" />
+
+    <TextView
+        android:id="@+id/txtFuncionarioBO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/menuEntregatxtBO"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnArmadoMochilaAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="444dp"
+        android:background="#ED7D87"
+        android:onClick="atras"
+        android:text="@string/volver"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

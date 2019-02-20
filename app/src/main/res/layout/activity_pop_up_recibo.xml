@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#29235c"
+    android:padding="5dp"
+    tools:context=".popUpRecibo">
+
+    <TextView
+        android:id="@+id/txtDetalle"
+        android:layout_width="262dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/detallePopUp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/m1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/mochilaPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/interfoniaPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m1" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tabletPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c1" />
+
+    <TextView
+        android:id="@+id/txtestadoMochila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/estadoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtestadoInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/estadoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtestadoMochila" />
+
+    <TextView
+        android:id="@+id/txtestadoTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/estadoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtestadoCable" />
+
+    <TextView
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/cable"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1" />
+
+    <TextView
+        android:id="@+id/sa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/senaleraA"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+    <TextView
+        android:id="@+id/sb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/senaleraB"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sa1" />
+
+    <TextView
+        android:id="@+id/txtestadoCable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/estadoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtestadoInter" />
+
+    <TextView
+        android:id="@+id/txtestadoSenA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/estadoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtestadoTablet" />
+
+    <TextView
+        android:id="@+id/txtestadoSenB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/estadoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtestadoSenA" />
+
+    <Button
+        android:id="@+id/btnPopUpListo"
+        android:layout_width="116dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/fondo"
+        android:onClick="volveraMP"
+        android:text="@string/confirmarLista"
+        android:textColor="#FFF"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/btnPopUpAtras"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/co1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/confirmaEntregatxtBP"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb1" />
+
+    <TextView
+        android:id="@+id/txtestadoCot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/estadoPopUp"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtestadoSenB" />
+
+    <TextView
+        android:id="@+id/fu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menuEntregatxtBONombre"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPopUpAtras"
+        android:layout_width="62dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="380dp"
+        android:background="#ED7D87"
+        android:onClick="volverAtras"
+        android:text="@string/volver"
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
